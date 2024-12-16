@@ -41,6 +41,10 @@ main {
     padding: 20px;
     padding-bottom: 80px; /* Добавляем отступ внизу для футера */
 	flex: 1;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 footer {
@@ -89,6 +93,9 @@ th:nth-child(3), td:nth-child(3) {
 	border: double #42300e;
 	border-radius: 30px;
 	border-width: 10px;
+	padding: 20px;
+	width: 100%;
+	box-sizing: border-box;
 }
 
 #mainpic {
@@ -130,5 +137,13 @@ main ul li::before {
     font-weight: bold;
     display: inline-block;
     width: 1em;
-    margin-left: -1em;
+    margin-left: 1em;
+}
+
+.tips li {
+	transition: transform 0.2s ease-in-out;
+}
+
+.tips li:hover {
+	transform: scale(1.05);
 }
