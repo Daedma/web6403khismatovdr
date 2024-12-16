@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f42a;
+	background-image: url('images/background.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-blend-mode: lighten;
+	background-attachment: fixed; /* Фиксирует фон */
+    min-height: 100vh; /* Убедитесь, что фон занимает всю высоту экрана */
+	display: flex; 
+	flex-direction: column;
+}
+
+header {
+    background-color: #35280f;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: #3f321b;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    padding-bottom: 80px; /* Добавляем отступ внизу для футера */
+	flex: 1;
+}
+
+footer {
+    background-color: #35280f;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: static;
+    width: 100%;
+    bottom: 0;
+}
+
+table {
+    width: 100%;
+	background-color: wheat;
+
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #42300e;
+    color: #fff;
+}
+
+th:nth-child(1), td:nth-child(1) {
+	text-align: left;
+}
+th:nth-child(2), td:nth-child(2) {
+	text-align: center;
+}
+th:nth-child(3), td:nth-child(3) {
+	text-align: right;
+}
+
+.onbackground {
+	background-color: wheat;
+	background-clip:padding-box;
+	border: double #42300e;
+	border-radius: 30px;
+	border-width: 10px;
+}
+
+#mainpic {
+	display: block;
+	margin: 0 auto;
+	padding-bottom: 20px;
+	width: 40%;
+}
+
+h2 {
+	text-shadow:      
+				-1px -1px 5px wheat,
+                1px -1px 5px wheat,
+                -1px 1px 5px wheat,
+                1px 1px 5px wheat;
+}
+
+a {
+	color: #2c210d;
+}
+
+/* Стили для списков */
+main ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+main ul li {
+    background-color: wheat;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+main ul li::before {
+    content: "•";
+    color: #42300e;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
