@@ -1,0 +1,19 @@
+{
+    "/lab4/data": {
+        "get":
+                [
+					{
+						"place": "Лес у реки Волга",
+						"description": "Отличное место для сбора белых грибов и лисичек.",
+						"season": "Июль-Сентябрь",
+						"mapLink": "https://maps.app.goo.gl/NgyWSykUx2n2WdAGA"
+					},
+					{
+						"place": "Парк Дружбы",
+						"description": "Можно найти опята и подберезовики.",
+						"season": "Август-Октябрь",
+						"mapLink": "https://maps.app.goo.gl/evwAxLiMTYpwYQLSA"
+					}
+				]
+    }
+}
