@@ -28,7 +28,7 @@
             </tr>
         </table>
 		<div id="suggestion" class="onbackground">
-            <form action="/api" method="post">
+            <form id="suggestion-form" action="" method="post">
                 <h3>Предложить свое место</h3>
                 <div>
                     <label for="place-name">Название места:</label>
@@ -51,6 +51,7 @@
                     <input type="email" id="email" name="email" required>
                 </div>
                 <button type="submit">Отправить</button>
+                <div class="error" id="form-error"></div>
             </form>
 		</div>
     </main>
@@ -58,5 +59,6 @@
         <p>&copy; 2004 Грибные места Самары</p>
     </footer>
 	<script src="places.js"></script>
+	<script src="suggestion.js"></script>
 </body>
 </html>

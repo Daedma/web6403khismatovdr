@@ -197,10 +197,12 @@ main ul li::before {
 	flex-direction: column;
 	align-items: flex-start;
 }
+
 .onbackground form label {
 	margin-top: 10px;
 	width: 150px;
 }
+
 .onbackground form input,
 .onbackground form textarea,
 .onbackground form button {
@@ -234,4 +236,16 @@ main ul li::before {
 	width: 40%;
 	min-width: 350px;
 	align-self: flex-end;
+}
+
+.error {
+	color: red;
+	font-size: 12px;
+	margin-top: 5px;
+}
+
+.onbackground form input.invalid,
+.onbackground form textarea.invalid,
+.onbackground form button.invalid {
+    border-color: red;
 }
