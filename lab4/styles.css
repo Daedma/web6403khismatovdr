@@ -101,13 +101,6 @@ th:nth-child(3), td:nth-child(3) {
 	box-sizing: border-box;
 }
 
-/* #mainpic {
-	display: block;
-	margin: 0 auto;
-	padding-bottom: 20px;
-	width: 40%;
-} */
-
 h2 {
 	text-shadow:      
 				-1px -1px 5px wheat,
@@ -197,4 +190,48 @@ main ul li::before {
 	grid-row: 3;
 	grid-column: 1;
 	align-self: self-end;
+}
+
+.onbackground form {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.onbackground form label {
+	margin-top: 10px;
+	width: 150px;
+}
+.onbackground form input,
+.onbackground form textarea,
+.onbackground form button {
+	width: calc(100% - 160px);
+	margin-top: 5px;
+	padding: 10px;
+	border-radius: 8px;
+	border: 1px solid #ccc;
+	color: #35280f;
+}
+
+
+.onbackground form button {
+	background-color: #f5deb3;
+	cursor: pointer;
+	width: 100px;
+	border-color: #2c210d;
+}
+
+.onbackground form button:hover {
+	background-color:#dbc08e;
+}
+
+.onbackground form div {
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+
+#suggestion {
+	width: 40%;
+	min-width: 350px;
+	align-self: flex-end;
 }

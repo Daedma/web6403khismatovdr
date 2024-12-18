@@ -37,6 +37,32 @@
                 <td>Август-Октябрь</td>
             </tr>
         </table>
+		<div id="suggestion" class="onbackground">
+            <form action="/api" method="post">
+                <h3>Предложить свое место</h3>
+                <div>
+                    <label for="place-name">Название места:</label>
+                    <input type="text" id="place-name" name="place-name" required>
+                </div>
+                <div>
+                    <label for="description">Описание:</label>
+                    <textarea id="description" name="description" required></textarea>
+                </div>
+                <div>
+                    <label for="season">Сезон:</label>
+                    <input type="text" id="season" name="season" required>
+                </div>
+                <div>
+                    <label for="map-link">Ссылка на карту:</label>
+                    <input type="url" id="map-link" name="map-link" required>
+                </div>
+                <div>
+                    <label for="email">Email для обратной связи:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <button type="submit">Отправить</button>
+            </form>
+		</div>
     </main>
     <footer>
         <p>&copy; 2004 Грибные места Самары</p>
